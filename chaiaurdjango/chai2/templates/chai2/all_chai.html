@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Chai Page
+{% endblock %}
+
+{% block content %}
+    <h1>Chai aur Code : Chai Page Contents</h1>
+    <h2>Testing</h2>
+    {% for chai in chais %}
+        <div class="chai-item">
+            <img src="{{ chai.image.url }}" alt="{{ chai.name }}" >
+            <h3>{{ chai.name }}</h3>
+            <p>{{ chai.description }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
