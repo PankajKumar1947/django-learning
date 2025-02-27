@@ -30,3 +30,5 @@ urlpatterns = [
     # linking chai2 app
     path('chai2/', include('chai2.urls')) # -> transefers the controls to chai2's urls
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+## + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  --> is added to serve media files
